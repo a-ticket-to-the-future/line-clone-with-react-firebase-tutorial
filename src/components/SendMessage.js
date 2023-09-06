@@ -48,7 +48,7 @@ function SendMessage() {
                  onChange={(e) => setMessage(e.target.value)}
                  value={message}
                  />
-                 <Send style={{ color: "#7AC2FF", marginLeft: "20px" }}
+                 <Send style={{ color: "#7AC2FF", marginLeft: "20px" ,cursor:'pointer'}}
                         onClick={sendMessage} />
                 {/* <Button style={{ color: "#7AC2FF", marginLeft: "20px" }}
                         onClick={sendMessage}>
