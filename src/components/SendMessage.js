@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { db, auth } from '../firebase';
 import firebase from 'firebase/compat/app';
-import { Input } from '@mui/material';
-import  { Send, SendToMobile } from "@mui/icons-material";
+import { Button, Input } from '@mui/material';
+import { Send } from '@mui/icons-material';
+// import  { Send, SendAndArchive, SendRounded,  } from "@mui/icons-material";
 
 
 
@@ -47,10 +48,12 @@ function SendMessage() {
                  onChange={(e) => setMessage(e.target.value)}
                  value={message}
                  />
-                <Send 
-                  style={{ color: "#7AC2FF", marginLeft: "20px" }}
-                  // onClink={sendMessage}
-                /> 
+                 <Send style={{ color: "#7AC2FF", marginLeft: "20px" }}
+                        onClick={sendMessage} />
+                {/* <Button style={{ color: "#7AC2FF", marginLeft: "20px" }}
+                        onClick={sendMessage}>
+                  送信
+                </Button>  */}
             </div>
         </form>
 
